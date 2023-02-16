@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery"></script>
+<script src="controller.js">
+
+
+</script>
+<h1>Welcome to the Swamp Film Center</h1>
+<p>The most used movie center for all your Shrek needs</p>
+<p>What movie would you like to watch today?</p>
+<label for="movieSelect1">Choose a movie</label>
+<select name="movies" id="movieSelect1" value="value" onchange="movieSelect()">
+    <option selected disabled value="x">--Please Select--</option>
+    <option value="Shrek">Shrek 1</option>
+    <option value="Shrek 2">Shrek 2</option>
+    <option value="Shrek the Third">Shrek The Third</option>
+    <option value="Shrek Forever After">Shrek Forever After</option>
+    <option value="Puss in Boots: The Last Wish">Puss in Boots: The Last Wish</option>
+</select>
+
+<p id="selected"></p>
+<h2>To order your ticket please enter the information bellow</h2>
+<p>How many tickets do you need</p>
+<select name="ticketNr" id="ticketNr" value="value">
+    <option selected disabled value="x">--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select><br>
+<p id="numbR"></p>
+<br>
+<label for="fname">First Name</label>
+<input type="text" id="fname" ><br>
+<p id="fnameR"></p><br>
+<label for="lname">Last Name</label>
+<input type="text" id="lname" ><br>
+<p id="lnameR"></p><br>
+<label for="phone">Phone Number</label>
+<input type="text" id="phone" ><br>
+<p id="phoneR"></p><br>
+<label for="email">Email</label>
+<input type="text" id="email" ><br>
+<p id="emailR"></p>
+<p id="movieSR"></p>
+
+
+<button onclick="testInput()">Place your order</button>
+<br>
+
+<p id="table"></p>
+
+
+
+<button onclick="resetList()">Reset tickets</button>
+
+</body>
+</html>
