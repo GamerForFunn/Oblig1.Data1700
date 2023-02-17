@@ -16,7 +16,7 @@ function testInput(){
             tester = 1;
         }else{document.getElementById("movieSR").innerHTML="";}
         let amount = document.getElementById("ticketNr").value; //Testing number of tickets selected
-        if(amount == "--"){
+        if(amount == "x"){
             document.getElementById("numbR").innerHTML = missing;
             console.log("numb checker works");
             tester = 1;
